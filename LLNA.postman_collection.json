@@ -1,0 +1,753 @@
+{
+	"info": {
+		"_postman_id": "5468d789-3250-4aee-a769-53b2f2ef0ca4",
+		"name": "LLNA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"Tester.account@llenaai.com\",\n    \"password\": \"Healthy1!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.16.215.93/login",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"\",\n    \"fname\": \"\",\n    \"lname\": \"\",\n    \"email\": \"\",\n    \"phone\": \"\",\n    \"password\":\"\",\n    \"fb_user\":0\n}"
+				},
+				"url": {
+					"raw": "http://3.16.215.93/register",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgotpassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"\"\n}"
+				},
+				"url": {
+					"raw": "http://3.16.215.93/forgotpassword",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"forgotpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profileupdate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"\",\n    \"name\":\"\",\n    \"fname\":\"\",\n    \"lname\":\"\",\n    \"sex\":\"\",\n    \"address\":\"\",\n    \"dateofbirth\":\"\",\n    \"image\":\"\"\n}"
+				},
+				"url": {
+					"raw": "http://3.16.215.93/profileupdate",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"profileupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getmedicaldata",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"id\": \"156\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.16.215.93/getmedicaldata",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"getmedicaldata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setmedicaldata",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":156,\n    \"bloodglucose\": \"6.0\",\n    \"bgunitCD\": \"mo\",\n    \"bloodpressure\": \"120/60\",\n    \"weight\": \"\",\n    \"height\": \"\",\n    \"timestamp\": \"\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.16.215.93/setmedicaldata",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"setmedicaldata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recomendationalgo(gets list of recipes)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"id\": \"156\",\n    \"from\": 2,\n    \"currenttime\": \"1:19:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.16.215.93/recommendationalgo",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"recommendationalgo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getrecipes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTUxfQ.WAK_rWjI0CQGVBSe3KyL-vg-omuBpcGO6fgJUpGkdgM",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"accessToken\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTUxfQ.WAK_rWjI0CQGVBSe3KyL-vg-omuBpcGO6fgJUpGkdgM\",\n    \"currenttime\": \"1:19:00\"\n}"
+				},
+				"url": {
+					"raw": "http://3.16.215.93/getrecipes",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"getrecipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getrecipe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Control-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"2000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "3.16.215.93/getrecipe",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"getrecipe"
+					],
+					"query": [
+						{
+							"key": "Access",
+							"value": "application/json",
+							"disabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"disabled": true
+						},
+						{
+							"key": "x-access-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchrecipes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"152\",\n    \"from\":2,\n    \"currenttime\": \"1:19:00\",\n    \"strparam\":\"\"\n}"
+				},
+				"url": {
+					"raw": "3.16.215.93/searchrecommendation",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"searchrecommendation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "raterecipe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"foodid\":\"2000\",\n    \"rating\": \"e\",\n    \"q1\": \"\",\n    \"q2\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://3.16.215.93/raterecipe",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"raterecipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saverecipe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"foodid\":\"2000\",\n    \"userid\": \"156\"\n}"
+				},
+				"url": {
+					"raw": "3.16.215.93/saverecipe",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"saverecipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getsaverecipe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"156\",\n    \"from\": \"1\"\n}"
+				},
+				"url": {
+					"raw": "3.16.215.93/getsaverecipe",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"getsaverecipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delfavrecipe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"foodid\": \"2000\",\n    \"userid\": \"156\"\n}"
+				},
+				"url": {
+					"raw": "3.16.215.93/delfavrecipe",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"delfavrecipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setfoodpreference",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"156\",\n    \"corn_free_preview\": true,\n    \"dairy_free_preview\": false,\n    \"gluten_free_preview\": true,\n    \"gmo_free_preview\": true,\n    \"no_trans_fat_preview\": true,\n    \"nut_free_preview\": true,\n    \"organic_preview\": true,\n    \"peanut_free_preview\": true,\n    \"soy_free_preview\": true,\n    \"vegetarian_preview\": true,\n    \"egg_free\": true,\n    \"sugar_free\": true\n}"
+				},
+				"url": {
+					"raw": "http://3.16.215.93/setfoodpreference",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"setfoodpreference"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getfoodpreference",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"156\"\n}"
+				},
+				"url": {
+					"raw": "http://3.16.215.93/getfoodpreference",
+					"protocol": "http",
+					"host": [
+						"3",
+						"16",
+						"215",
+						"93"
+					],
+					"path": [
+						"getfoodpreference"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getrestaurants (delivery.com api)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamVkZC5jaGlvbmdsb0Bwd2N0ZWNoLmNhIn0.inAbA_hYI4scprCqbEJGFrVAdhMxNqXSs1XpU5w32Is",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"156\"\n}"
+				},
+				"url": {
+					"raw": "https://api.delivery.com/merchant/search/delivery?method=delivery&merchant_type=R&access_token=sr8gnsW3aDKHy3FRmHzrCoTdEQjPSgODvNZeQfdq&client_id=MTkzNjllNmNlYzhjYzgyMjFlMjg1OTFjMTIwOTMwZjYw&latitude=40.752112&longitude=-73.995299&inexact=true'",
+					"protocol": "https",
+					"host": [
+						"api",
+						"delivery",
+						"com"
+					],
+					"path": [
+						"merchant",
+						"search",
+						"delivery"
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "delivery"
+						},
+						{
+							"key": "merchant_type",
+							"value": "R"
+						},
+						{
+							"key": "access_token",
+							"value": "sr8gnsW3aDKHy3FRmHzrCoTdEQjPSgODvNZeQfdq"
+						},
+						{
+							"key": "client_id",
+							"value": "MTkzNjllNmNlYzhjYzgyMjFlMjg1OTFjMTIwOTMwZjYw"
+						},
+						{
+							"key": "latitude",
+							"value": "40.752112"
+						},
+						{
+							"key": "longitude",
+							"value": "-73.995299"
+						},
+						{
+							"key": "inexact",
+							"value": "true'"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
